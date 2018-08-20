@@ -18,7 +18,7 @@ This is a blogging app based on the [Flask tutorial](https://github.com/pallets/
     * `db.py` - handles requests to DB
     * `schema.sql` - schema for `user` and `post` tables
     * `auth.py` - a blueprint consisting of the `auth/register`, `auth/login`, and `auth/logout` views
-    * `blog.py` - 
+    * `blog.py` - a blueprint consisting of the `/`, `/create`, `/<int:id>/update`, and `/<int:id>/delete` views
     * `templates/` - contains Jinja files (HTML files that evaluate Python)
         * `base.html` - the base template
             * has a link to login/logout
@@ -28,6 +28,9 @@ This is a blogging app based on the [Flask tutorial](https://github.com/pallets/
         * `auth/`
             * `register.html`
             * `login.html`
+        * `blog/`
+            * `index.html`
+    * `static/` - CSS, Javascript, images, etc. (can be accessed in Flask via `url_for('static', filename='...')`)
 * `tests/` - contains tests
 * `env/` - the Python virtual environment (not uploaded to Github)
 * `templates/` - 
