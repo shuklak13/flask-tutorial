@@ -34,8 +34,11 @@ This is a blogging app based on the [Flask tutorial](https://github.com/pallets/
             * `update.html`
     * `static/` - CSS, Javascript, images, etc. (can be accessed in Flask via `url_for('static', filename='...')`)
 * `tests/` - contains tests
+    * `data.sql` - data used for testing
+    * `conftest.py` - creates 3 test fixtures (configuration environments for testing) - `app()`, `client()`, `runner()`, and `auth()`
+    * `test_factory.py` - tests the application factory `create_app()` in `__init__.py`
+    * `test_db.py` - test the database
+    * `test_auth.py` - test authentication
 * `env/` - the Python virtual environment (not uploaded to Github)
-* `templates/` - 
-* `static/` - 
-* `setup.py` - 
-* `MANIFEST.in` - 
+* `setup.py` - used for installing the module as a package with `pip install -e .`
+* `MANIFEST.in` - contains files to be included in package
