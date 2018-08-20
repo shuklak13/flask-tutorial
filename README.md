@@ -30,6 +30,8 @@ This is a blogging app based on the [Flask tutorial](https://github.com/pallets/
             * `login.html`
         * `blog/`
             * `index.html`
+            * `create.html`
+            * `update.html`
     * `static/` - CSS, Javascript, images, etc. (can be accessed in Flask via `url_for('static', filename='...')`)
 * `tests/` - contains tests
 * `env/` - the Python virtual environment (not uploaded to Github)
