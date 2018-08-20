@@ -43,7 +43,9 @@ def register():
             return redirect(url_for('auth.login'))  
             # url_for() converts a View name (`auth.login`) to its corresponding URL
         else:
-            flash(error)    # flash() displays a message
+            flash(error)
+            # flash() displays a message 
+            # when get_flashed_messages() is called in base.html
 
     return render_template('auth/register.html')
 
